@@ -1,0 +1,553 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;0,200;0,400;0,600;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;0,200;0,400;0,600;0,800;1,400&display=swap");
+* {
+  font-family: "Ysabeau", sans-serif;
+}
+
+.body-entrance {
+  font-family: "Ysabeau", sans-serif;
+  color: #ffffff;
+}
+
+.entrance-content h1 {
+  font-family: "Comforter", cursive;
+  color: #ffffff;
+}
+
+.signature h2 {
+  font-family: "Comforter", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-entrance {
+  background: url(../images/IMG_2605.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header-entrance header-entrance" "maincontent maincontent" "mainFooder mainFooder";
+}
+.body-entrance .header-entrance {
+  grid-area: header-entrance;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.body-entrance .header-entrance h2 {
+  text-align: center;
+  word-spacing: 2rem;
+}
+.body-entrance .entrance-content {
+  grid-area: maincontent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.body-entrance .entrance-content h1 {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+}
+.body-entrance .entrance-content p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  word-spacing: 2rem;
+}
+.body-entrance .entrance-content button {
+  width: 100px;
+  height: 45px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+.body-entrance .entrance-content button a {
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+.body-entrance .entrance-content button a:link {
+  color: #ffffff;
+}
+.body-entrance .entrance-content button a:visited {
+  color: #ffffff;
+}
+.body-entrance .entrance-content button a:hover {
+  color: #ffffff;
+}
+.body-entrance .entrance-content button a:active {
+  color: #ffffff;
+}
+
+.entrancefooder {
+  grid-area: mainFooder;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 8rem;
+}
+.entrancefooder i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.entrancefooder .fa-brands {
+  font-size: 1.5rem;
+  color: #e7bf9d;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header" "maincontent maincontent" "mainFooder mainFooder";
+}
+
+.header-home {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas: "nav" "signature";
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 100vw;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.nav:hover .menu {
+  display: flex;
+}
+
+.menu li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu li:hover {
+  background-color: #f1f1f1;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.menu li:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 15vh;
+}
+
+.maincontent {
+  grid-area: maincontent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/IMG_2499-a.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0 2rem;
+  height: 100vh;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.mainFooder {
+  grid-area: mainFooder;
+  margin-top: 1rem;
+  text-align: center;
+}
+.mainFooder i {
+  margin: 1rem;
+  color: #bbbab8;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  grid-template-rows: 0.1fr 0.4fr 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "sign-up" "main-about-me" "main-about-me-my-image" "mainFooder";
+}
+
+.sign-up {
+  grid-area: sign-up;
+  max-width: 68.75rem;
+  max-height: 30rem;
+  margin: 2rem;
+  background-color: #f2f2f2;
+}
+.sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.sign-up form .sign-up-header {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.4em 1.4em;
+}
+.sign-up form .sign-up-description {
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: 1.4em 1.4em;
+  text-align: center;
+}
+.sign-up form .sign-up-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.sign-up form .sign-up-input #email {
+  min-width: 20rem;
+  margin-bottom: 2rem;
+  background: #fdfcfb;
+  font-family: inherit;
+  color: #bbbab8;
+  text-indent: 5%;
+  border: none;
+}
+.sign-up form .sign-up-input #submit {
+  width: auto;
+  height: auto;
+  padding: 1em 2.5em;
+  border: none;
+  background: #000000;
+  font-family: inherit;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.sign-up form .sign-up-input #submit:hover {
+  background: #000000;
+}
+.sign-up form .sign-up-input input:focus {
+  outline: none;
+}
+
+.main-about-me {
+  grid-area: main-about-me;
+}
+
+.main-about-me-my-image {
+  grid-area: main-about-me-my-image;
+  overflow: hidden;
+  margin: 2rem;
+}
+.main-about-me-my-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr auto 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "portfolio-images" "mainFooder";
+}
+
+.portfolio-images {
+  grid-area: portfolio-images;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 2rem;
+  position: relative;
+}
+
+.slideshow__container {
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.slideshow__container .slideshow__item {
+  padding: 0.5rem 0;
+}
+
+.specs-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "specs-image" "mainFooder";
+}
+.specs-container .main-specs {
+  grid-area: main-specs;
+}
+.specs-container .specs-image {
+  grid-area: specs-image;
+  overflow: hidden;
+  margin: 2rem;
+}
+.specs-container .specs-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  font-family: "Ysabeau", sans-serif;
+}
+
+.body-entrance {
+  font-family: "Ysabeau", sans-serif;
+  color: #ffffff;
+}
+
+.entrance-content h1 {
+  font-family: "Comforter", cursive;
+  color: #ffffff;
+}
+
+.signature h2 {
+  font-family: "Comforter", cursive;
+}
+
+@media screen and (min-width: 769px) {
+  .home-container {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+  }
+  .header-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    grid-area: header;
+  }
+  .signature {
+    align-items: flex-start;
+    margin-left: 15rem;
+  }
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15rem;
+  }
+  .dropbtn {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .maincontent {
+    margin: 2.5rem 20rem;
+    font-size: 4rem;
+    height: 1500px;
+  }
+  .mainFooder {
+    margin-top: 10rem;
+    margin-left: 20rem;
+    text-align: left;
+  }
+  .mainFooder i {
+    margin: 1rem;
+    color: #bbbab8;
+  }
+  .about-me-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas: "header header" "sign-up main-about-me-my-image" "main-about-me main-about-me-my-image" "mainFooder mainFooder";
+  }
+  .sign-up {
+    margin-left: 15rem;
+  }
+  .sign-up form .sign-up-description {
+    margin: 1.4em 3em;
+  }
+  .sign-up form .sign-up-input {
+    align-items: flex-start;
+  }
+  .sign-up form .sign-up-input #email {
+    height: 3em;
+  }
+  .sign-up form .sign-up-input #submit {
+    margin-left: 2em;
+  }
+  .main-about-me {
+    grid-area: main-about-me;
+    margin-left: 15rem;
+  }
+  .main-about-me h2 {
+    font-weight: 200;
+  }
+  .main-about-me-my-image {
+    grid-area: main-about-me-my-image;
+    overflow: hidden;
+    margin-right: 15rem;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "portfolio-images portfolio-images" "mainFooder mainFooder";
+  }
+  .portfolio-images {
+    grid-area: portfolio-images;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  .slideshow__container {
+    position: relative;
+    width: 300%; /* ajusta a largura para acomodar 12 imagens */
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow__item {
+    position: relative;
+    flex: 1;
+    width: 25%; /* largura de cada imagem é 25% da largura total */
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slide 60s infinite; /* ajusta a duração para acomodar 12 imagens */
+  }
+  /* Adiciona animações para as 12 imagens */
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    8.33% {
+      transform: translateX(0%);
+    }
+    16.67% {
+      transform: translateX(-100%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    33.33% {
+      transform: translateX(-200%);
+    }
+    41.67% {
+      transform: translateX(-200%);
+    }
+    50% {
+      transform: translateX(-300%);
+    }
+    58.33% {
+      transform: translateX(-300%);
+    }
+    66.67% {
+      transform: translateX(-400%);
+    }
+    75% {
+      transform: translateX(-400%);
+    }
+    83.33% {
+      transform: translateX(-500%);
+    }
+    91.67% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(-600%);
+    }
+  }
+  .specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main-specs specs-image" "mainFooder mainFooder";
+  }
+  .specs-container .main-specs {
+    grid-area: main-specs;
+  }
+  .specs-container .specs-image {
+    grid-area: specs-image;
+    overflow: hidden;
+    margin: 2rem;
+  }
+  .specs-container .specs-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "maincontent maincontent"
+      "mainFooder mainFooder";
+  }
+  
+  .header {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "signature nav";
+    grid-area: header;
+  }
+  
+  .signature { grid-area: signature; }
+  
+  .nav { grid-area: nav; }
+  
+  .maincontent { grid-area: maincontent; }
+  
+  .mainFooder { grid-area: mainFooder; }
+  
