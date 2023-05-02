@@ -1,0 +1,1224 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;0,200;0,400;0,600;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,100;0,200;0,400;0,600;0,800;1,400&display=swap");
+* {
+  font-family: "Ysabeau", sans-serif;
+}
+
+.body-entrance {
+  font-family: "Ysabeau", sans-serif;
+  color: #ffffff;
+}
+
+.entrance-content h1 {
+  font-family: "Comforter", cursive;
+  color: #ffffff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1019607843), 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
+}
+
+.signature h2 {
+  font-family: "Comforter", cursive;
+  letter-spacing: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-entrance {
+  background: url(../images/body_backgroud.webp);
+  display: grid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header-entrance header-entrance" "maincontent maincontent" "mainFooder mainFooder";
+}
+.body-entrance .header-entrance {
+  grid-area: header-entrance;
+  display: grid;
+  grid-template-columns: 1.8fr 0.4fr;
+  grid-template-rows: 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas: "header-signature header-nav";
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  background: url(../images/body_header_background.webp);
+  background-repeat: no-repeat;
+  height: 7.5rem;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2000;
+  align-content: flex-start;
+  align-items: center;
+}
+.body-entrance .header-entrance h2 {
+  color: #ffffff;
+  font-size: 1em;
+  text-align: center;
+}
+.body-entrance .header-entrance .header-signature {
+  grid-area: header-signature;
+  margin-left: 20%;
+}
+.body-entrance .header-entrance .header-nav {
+  grid-area: header-nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.body-entrance .header-entrance .header-nav a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+.body-entrance .header-entrance .header-nav a:link {
+  color: #bbbab8;
+}
+.body-entrance .header-entrance .header-nav a:visited {
+  color: #bbbab8;
+}
+.body-entrance .header-entrance .header-nav a:hover {
+  color: #ffffff;
+}
+.body-entrance .header-entrance .header-nav a:active {
+  color: #bbbab8;
+}
+.body-entrance .entrance-content {
+  grid-area: maincontent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0.5em;
+}
+.body-entrance .entrance-content h1 {
+  margin-top: 4em;
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 0.5em;
+}
+.body-entrance .entrance-content p {
+  font-size: 1.5em;
+  margin: 2em 0;
+  word-spacing: 2em;
+}
+.body-entrance .entrance-content button {
+  width: 6.25rem;
+  height: 2.875rem;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+.body-entrance .entrance-content button a {
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+.body-entrance .entrance-content button a:link {
+  color: #ffffff;
+}
+.body-entrance .entrance-content button a:visited {
+  color: #ffffff;
+}
+.body-entrance .entrance-content button a:hover {
+  color: #000000;
+}
+.body-entrance .entrance-content button a:active {
+  color: #ffffff;
+}
+.body-entrance .entrancefooder {
+  grid-area: mainFooder;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+.body-entrance .entrancefooder a {
+  text-decoration: none;
+}
+.body-entrance .entrancefooder i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+}
+.body-entrance .entrancefooder .fa-brands {
+  font-size: 1.5em;
+  color: #bbbab8;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.main-header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas: "nav" "signature";
+}
+.main-header .signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+.main-header .signature h2 {
+  font-size: 2.5em;
+}
+.main-header .signature p {
+  font-size: 1.2em;
+}
+.main-header .nav {
+  grid-area: nav;
+}
+.main-header .nav .dropbtn {
+  background-color: #bbbab8;
+  color: #ffffff;
+  font-size: 1em;
+  border: none;
+  width: 100vw;
+  height: 2em;
+  cursor: pointer;
+  font-size: 3em;
+}
+.main-header .nav .menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: #bbbab8;
+}
+.main-header .nav .menu li {
+  padding: 0.4em 1em;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+}
+.main-header .nav .menu li:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+.main-header .nav .menu li a {
+  text-decoration: none;
+}
+.main-header .nav .menu li a:link {
+  color: #bbbab8;
+}
+.main-header .nav .menu li a:visited {
+  color: #bbbab8;
+}
+.main-header .nav .menu li a:hover {
+  color: #ffffff;
+}
+.main-header .nav .menu li a:active {
+  color: #ffffff;
+}
+.main-header .nav:hover .menu {
+  display: flex;
+}
+.main-header .nav .sub-menu {
+  display: none;
+  position: absolute;
+  right: 6.25em;
+  width: 20.5em;
+  background-color: #282d34;
+}
+.main-header .nav .sub-menu li {
+  text-align: center;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "maincontent" "mainFooder";
+  background-color: #282d34;
+  color: #ffffff;
+}
+.home-container .maincontent {
+  grid-area: maincontent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/home_maincontent.background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: 2px solid #ffffff;
+  margin: 0 6%;
+  height: 100vh;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.home-container .maincontent h2 {
+  font-family: "Comforter", cursive;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1019607843), 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
+}
+
+.mainFooder {
+  grid-area: mainFooder;
+  margin-top: 1rem;
+  text-align: center;
+}
+.mainFooder i {
+  margin: 1em;
+  color: #bbbab8;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  grid-template-rows: 0.1fr 0.4fr 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "sign-up" "main-about-me" "main-about-me-my-image" "mainFooder";
+  background-color: #282d34;
+  color: #ffffff;
+}
+.about-me-container .sign-up {
+  grid-area: sign-up;
+  max-width: 68.75rem;
+  min-height: 39rem;
+  margin: 2rem;
+  background-color: #bbbab8;
+  color: #000000;
+}
+.about-me-container .sign-up form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.about-me-container .sign-up form .sign-up-header {
+  font-size: 2em;
+  text-align: center;
+  margin: 1.4em 1.4em;
+}
+.about-me-container .sign-up form .sign-up-description {
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: 1.4em 1.4em;
+  text-align: center;
+}
+.about-me-container .sign-up form .sign-up-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+.about-me-container .sign-up form .sign-up-input #email {
+  min-width: 18em;
+  margin-bottom: 2em;
+  background: #fdfcfb;
+  font-family: inherit;
+  color: #bbbab8;
+  text-indent: 5%;
+  border: none;
+}
+.about-me-container .sign-up form .sign-up-input #submit {
+  width: auto;
+  height: auto;
+  padding: 1em 2.5em;
+  border: none;
+  background: #000000;
+  font-family: inherit;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.about-me-container .sign-up form .sign-up-input #submit:hover {
+  background: #000000;
+}
+.about-me-container .sign-up form .sign-up-input input:focus {
+  outline: none;
+}
+.about-me-container .sign-up form p {
+  text-align: center;
+}
+.about-me-container .main-about-me {
+  grid-area: main-about-me;
+  margin: 0 6%;
+}
+.about-me-container .main-about-me h2 {
+  font-weight: 200;
+  margin-bottom: 5%;
+}
+.about-me-container .main-about-me p {
+  text-align: justify;
+  margin-bottom: 2%;
+}
+.about-me-container .main-about-me-my-image {
+  grid-area: main-about-me-my-image;
+  overflow: hidden;
+  margin: 2rem;
+  border: 2px solid #ffffff;
+}
+.about-me-container .main-about-me-my-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr auto 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "portfolio-images" "mainFooder";
+  background-color: #282d34;
+  color: #ffffff;
+}
+.portfolio-container .portfolio-images {
+  border: 2px solid #ffffff;
+  grid-area: portfolio-images;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-container .slideshow__container {
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-container .slideshow__container .slideshow__item {
+  padding: 0.5em 0;
+}
+
+.specs-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2fr 1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "main-specs" "specs-image" "mainFooder";
+  background-color: #282d34;
+  color: #ffffff;
+}
+.specs-container .main-specs {
+  grid-area: main-specs;
+  margin: 2%;
+  position: relative;
+}
+.specs-container .main-specs .specs-1,
+.specs-container .main-specs .specs-2 {
+  z-index: 1;
+  font-size: 3em;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+}
+.specs-container .main-specs pre {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+.specs-container .main-specs div .image-mobile-1 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.specs-container .main-specs div .image-mobile-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 18em;
+  z-index: 0;
+}
+.specs-container .specs-image {
+  grid-area: specs-image;
+  overflow: hidden;
+  margin: 2rem;
+  display: none;
+  border: 2px solid #ffffff;
+}
+.specs-container .specs-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trophies-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr auto 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "trophies-slider" "mainFooder";
+  background-color: #282d34;
+  color: #ffffff;
+  height: 100vh;
+}
+.trophies-container .trophies-slider {
+  width: 100%;
+  margin-top: 10%;
+  align-items: center;
+  min-height: 20vh;
+}
+.trophies-container .trophies-slider input {
+  display: none;
+}
+.trophies-container .trophies-slider .Trophy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 40vh;
+  perspective: 26.5rem;
+  overflow: hidden;
+}
+.trophies-container .trophies-slider .Trophy .item {
+  width: 18.75em;
+  min-height: 15.875em;
+  padding: 1.875em;
+  border-radius: 5px;
+  background-color: transparent;
+  position: absolute;
+  border: 3px solid white;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.trophies-container .trophies-slider .Trophy .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trophies-container .trophies-slider .Trophy-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 10vh;
+  perspective: 6.5rem;
+  overflow: hidden;
+}
+.trophies-container .trophies-slider .Trophy-description .item {
+  width: 18.75em;
+  min-height: 5.875em;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #282d34;
+  position: absolute;
+  border: 3px solid white;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.trophies-container .trophies-slider .Trophy-description .item h2 {
+  position: absolute;
+}
+.trophies-container #t-1:checked ~ .Trophy label[for=t-3],
+.trophies-container #t-1:checked ~ .Trophy-description label[for=t-3] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+  color: #bbbab8;
+}
+.trophies-container #t-1:checked ~ .Trophy label[for=t-2],
+.trophies-container #t-1:checked ~ .Trophy-description label[for=t-2] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-1:checked ~ .Trophy label[for=t-5],
+.trophies-container #t-1:checked ~ .Trophy-description label[for=t-5] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-1:checked ~ .Trophy label[for=t-4],
+.trophies-container #t-1:checked ~ .Trophy-description label[for=t-4] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  color: #bbbab8;
+}
+.trophies-container #t-1:checked ~ .Trophy label[for=t-1],
+.trophies-container #t-1:checked ~ .Trophy-description label[for=t-1] {
+  z-index: 4;
+  color: #000000;
+  background-color: #ffffff;
+}
+.trophies-container #t-2:checked ~ .Trophy label[for=t-4],
+.trophies-container #t-2:checked ~ .Trophy-description label[for=t-4] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+  color: #bbbab8;
+}
+.trophies-container #t-2:checked ~ .Trophy label[for=t-3],
+.trophies-container #t-2:checked ~ .Trophy-description label[for=t-3] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-2:checked ~ .Trophy label[for=t-1],
+.trophies-container #t-2:checked ~ .Trophy-description label[for=t-1] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-2:checked ~ .Trophy label[for=t-5],
+.trophies-container #t-2:checked ~ .Trophy-description label[for=t-5] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  color: #bbbab8;
+}
+.trophies-container #t-2:checked ~ .Trophy label[for=t-2],
+.trophies-container #t-2:checked ~ .Trophy-description label[for=t-2] {
+  z-index: 4;
+  color: #000000;
+  background-color: #ffffff;
+}
+.trophies-container #t-3:checked ~ .Trophy label[for=t-5],
+.trophies-container #t-3:checked ~ .Trophy-description label[for=t-5] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+  color: #bbbab8;
+}
+.trophies-container #t-3:checked ~ .Trophy label[for=t-4],
+.trophies-container #t-3:checked ~ .Trophy-description label[for=t-4] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-3:checked ~ .Trophy label[for=t-2],
+.trophies-container #t-3:checked ~ .Trophy-description label[for=t-2] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-3:checked ~ .Trophy label[for=t-1],
+.trophies-container #t-3:checked ~ .Trophy-description label[for=t-1] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  color: #bbbab8;
+}
+.trophies-container #t-3:checked ~ .Trophy label[for=t-3],
+.trophies-container #t-3:checked ~ .Trophy-description label[for=t-3] {
+  z-index: 4;
+  color: #000000;
+  background-color: #ffffff;
+}
+.trophies-container #t-4:checked ~ .Trophy label[for=t-1],
+.trophies-container #t-4:checked ~ .Trophy-description label[for=t-1] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+  color: #bbbab8;
+}
+.trophies-container #t-4:checked ~ .Trophy label[for=t-5],
+.trophies-container #t-4:checked ~ .Trophy-description label[for=t-5] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-4:checked ~ .Trophy label[for=t-3],
+.trophies-container #t-4:checked ~ .Trophy-description label[for=t-3] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-4:checked ~ .Trophy label[for=t-2],
+.trophies-container #t-4:checked ~ .Trophy-description label[for=t-2] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  color: #bbbab8;
+}
+.trophies-container #t-4:checked ~ .Trophy label[for=t-4],
+.trophies-container #t-4:checked ~ .Trophy-description label[for=t-4] {
+  z-index: 4;
+  color: #000000;
+  background-color: #ffffff;
+}
+.trophies-container #t-5:checked ~ .Trophy label[for=t-2],
+.trophies-container #t-5:checked ~ .Trophy-description label[for=t-2] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+  color: #bbbab8;
+}
+.trophies-container #t-5:checked ~ .Trophy label[for=t-1],
+.trophies-container #t-5:checked ~ .Trophy-description label[for=t-1] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+  color: #bbbab8;
+}
+.trophies-container #t-5:checked ~ .Trophy label[for=t-4],
+.trophies-container #t-5:checked ~ .Trophy-description label[for=t-4] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+  z-index: 4;
+  color: #bbbab8;
+}
+.trophies-container #t-5:checked ~ .Trophy label[for=t-3],
+.trophies-container #t-5:checked ~ .Trophy-description label[for=t-3] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  color: #bbbab8;
+}
+.trophies-container #t-5:checked ~ .Trophy label[for=t-5],
+.trophies-container #t-5:checked ~ .Trophy-description label[for=t-5] {
+  z-index: 4;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+* {
+  font-family: "Ysabeau", sans-serif;
+}
+
+.body-entrance {
+  font-family: "Ysabeau", sans-serif;
+  color: #ffffff;
+}
+
+.entrance-content h1 {
+  font-family: "Comforter", cursive;
+  color: #ffffff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1019607843), 1px 1px 1px rgba(0, 0, 0, 0.5019607843);
+}
+
+.signature h2 {
+  font-family: "Comforter", cursive;
+  letter-spacing: 0.75rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .body-entrance .header-entrance {
+    align-content: flex-start;
+    word-spacing: 0.5em;
+  }
+  .body-entrance .header-entrance .header-nav {
+    flex-direction: row;
+  }
+  .body-entrance .header-entrance .header-nav a {
+    font-size: 1.1em;
+  }
+  .body-entrance .entrance-content h1 {
+    margin-top: 5em;
+    font-size: 5em;
+    letter-spacing: 0.5em;
+  }
+  .body-entrance .entrancefooder {
+    margin-top: 5em;
+  }
+  .main-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    height: 10rem;
+  }
+  .main-header .signature {
+    align-items: flex-start;
+    margin-left: 6%;
+    height: 15vh;
+    position: relative;
+  }
+  .main-header .signature h2 {
+    font-size: 3.3em;
+  }
+  .main-header .signature p {
+    position: absolute;
+    margin-top: 4em;
+    margin-left: 2em;
+    font-size: 1.1em;
+  }
+  .main-header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 6%;
+    font-size: 1.2em;
+  }
+  .main-header .nav .dropbtn {
+    display: none;
+  }
+  .main-header .nav .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .main-header .nav .menu li {
+    padding: 0.4em 0.2em;
+  }
+  .main-header .nav .sub-menu {
+    width: 8.5em;
+  }
+  .home-container {
+    grid-template-rows: 0.1fr 0.6fr 0.1fr;
+    height: 125vh;
+  }
+  .home-container .maincontent {
+    align-items: flex-start;
+    margin: 0 10%;
+    font-size: 3.5em;
+  }
+  .home-container .maincontent h2 {
+    margin-top: 8em;
+  }
+  .mainFooder {
+    margin-top: 1em;
+    margin-left: 20em;
+    text-align: left;
+  }
+  .mainFooder i {
+    font-size: 1.5em;
+    margin: 1em;
+    color: #bbbab8;
+  }
+  .about-me-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.8fr 1.2fr 0.1fr;
+    grid-template-areas: "header header" "sign-up main-about-me-my-image" "main-about-me main-about-me-my-image" "mainFooder mainFooder";
+  }
+  .about-me-container .sign-up {
+    min-height: 35em;
+    max-height: 35em;
+    margin-left: 8%;
+    margin-right: 2%;
+    min-height: 25em;
+    max-height: 30em;
+  }
+  .about-me-container .sign-up .sign-up-header {
+    margin: 1em 1.4em;
+  }
+  .about-me-container .sign-up form .sign-up-description {
+    margin: 1.2% 2%;
+  }
+  .about-me-container .sign-up form .sign-up-input {
+    align-items: flex-start;
+  }
+  .about-me-container .sign-up form .sign-up-input #email {
+    width: 95%;
+    height: 3em;
+  }
+  .about-me-container .sign-up form .sign-up-input #submit {
+    margin-left: 2em;
+  }
+  .about-me-container .main-about-me {
+    grid-area: main-about-me;
+    margin-left: 8%;
+    margin-right: 2%;
+  }
+  .about-me-container .main-about-me h2 {
+    font-weight: 200;
+  }
+  .about-me-container .main-about-me p {
+    font-size: 1.2em;
+  }
+  .about-me-container .main-about-me-my-image {
+    grid-area: main-about-me-my-image;
+    overflow: hidden;
+    margin-right: 8%;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "portfolio-images portfolio-images" "mainFooder mainFooder";
+    /* Animations for the 12 images */
+  }
+  .portfolio-container .portfolio-images {
+    grid-area: portfolio-images;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 10%;
+    position: relative;
+  }
+  .portfolio-container .slideshow__container {
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-container .slideshow__container .slideshow__item {
+    padding: 0.5em 0;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    8.33% {
+      transform: translateX(0%);
+    }
+    16.67% {
+      transform: translateX(-100%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    33.33% {
+      transform: translateX(-200%);
+    }
+    41.67% {
+      transform: translateX(-200%);
+    }
+    50% {
+      transform: translateX(-300%);
+    }
+    58.33% {
+      transform: translateX(-300%);
+    }
+    66.67% {
+      transform: translateX(-400%);
+    }
+    75% {
+      transform: translateX(-400%);
+    }
+    83.33% {
+      transform: translateX(-500%);
+    }
+    91.67% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(-600%);
+    }
+  }
+  .specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main-specs specs-image" "mainFooder mainFooder";
+  }
+  .specs-container .main-specs {
+    grid-area: main-specs;
+    margin-left: 10%;
+  }
+  .specs-container .main-specs .specs-1,
+  .specs-container .main-specs .specs-2 {
+    font-size: 3em;
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+  }
+  .specs-container .main-specs pre {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  .specs-container .main-specs .image-mobile-1,
+  .specs-container .main-specs .image-mobile-2 {
+    display: none;
+  }
+  .specs-container .specs-image {
+    grid-area: specs-image;
+    overflow: hidden;
+    margin: 2em;
+    display: block;
+  }
+  .specs-container .specs-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .trophies-container .trophies-slider .Trophy .item {
+    min-height: 21.875em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .body-entrance .header-entrance {
+    align-content: flex-start;
+    word-spacing: 0.5em;
+  }
+  .body-entrance .header-entrance .header-nav {
+    flex-direction: row;
+  }
+  .body-entrance .header-entrance .header-nav a {
+    font-size: 1.1rem;
+  }
+  .body-entrance .entrance-content h1 {
+    margin-top: 5em;
+    font-size: 5em;
+    letter-spacing: 0.5em;
+  }
+  .body-entrance .entrancefooder {
+    margin-top: 5em;
+  }
+  .main-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    height: 10rem;
+  }
+  .main-header .signature {
+    align-items: flex-start;
+    height: 15vh;
+    margin-left: 8%;
+  }
+  .main-header .signature h2 {
+    font-size: 4em;
+  }
+  .main-header .signature p {
+    position: absolute;
+    margin-top: 4em;
+    margin-left: 2.5em;
+    font-size: 1.4em;
+  }
+  .main-header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 8%;
+    font-size: 1.2em;
+  }
+  .main-header .nav .dropbtn {
+    display: none;
+  }
+  .main-header .nav .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .main-header .nav .sub-menu {
+    width: 8.5em;
+  }
+  .home-container {
+    grid-template-rows: 0.1fr 0.6fr 0.1fr;
+    height: 125vh;
+  }
+  .home-container .maincontent {
+    align-items: flex-start;
+    margin: 0 10%;
+    font-size: 4em;
+  }
+  .home-container .maincontent h2 {
+    margin-top: 8em;
+  }
+  .mainFooder {
+    margin-top: 1em;
+    margin-left: 20em;
+    text-align: left;
+  }
+  .mainFooder i {
+    font-size: 1.5em;
+    margin: 1em;
+    color: #bbbab8;
+  }
+  .about-me-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.8fr 1fr 0.1fr;
+    grid-template-areas: "header header" "sign-up main-about-me-my-image" "main-about-me main-about-me-my-image" "mainFooder mainFooder";
+  }
+  .about-me-container .sign-up {
+    margin-left: 10%;
+    margin-right: 2%;
+    min-height: 31em;
+    max-height: 40em;
+  }
+  .about-me-container .sign-up .sign-up-header {
+    margin: 1em 1.4em;
+  }
+  .about-me-container .sign-up form .sign-up-description {
+    margin: 1.4em 3em;
+  }
+  .about-me-container .sign-up form .sign-up-input {
+    align-items: flex-start;
+  }
+  .about-me-container .sign-up form .sign-up-input #email {
+    height: 3em;
+  }
+  .about-me-container .sign-up form .sign-up-input #submit {
+    margin-left: 2em;
+  }
+  .about-me-container .main-about-me {
+    grid-area: main-about-me;
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+  .about-me-container .main-about-me h2 {
+    font-weight: 200;
+  }
+  .about-me-container .main-about-me p {
+    font-size: 1.2em;
+  }
+  .about-me-container .main-about-me-my-image {
+    grid-area: main-about-me-my-image;
+    overflow: hidden;
+    margin-right: 10%;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "portfolio-images portfolio-images" "mainFooder mainFooder";
+    /* Animations for the 12 images */
+  }
+  .portfolio-container .portfolio-images {
+    grid-area: portfolio-images;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: 2%;
+    overflow: hidden;
+  }
+  .portfolio-container .portfolio-images .slideshow__container {
+    position: relative;
+    width: 300%; /* adjusts width to accommodate 12 images */
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .portfolio-container .portfolio-images .slideshow__container .slideshow__item {
+    position: relative;
+    flex: 1;
+    width: 20%; /* width of each image is 25% of the total width */
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slide 60s infinite; /* adjusts duration to accommodate 12 images*/
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    8.33% {
+      transform: translateX(0%);
+    }
+    16.67% {
+      transform: translateX(-100%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    33.33% {
+      transform: translateX(-200%);
+    }
+    41.67% {
+      transform: translateX(-200%);
+    }
+    50% {
+      transform: translateX(-300%);
+    }
+    58.33% {
+      transform: translateX(-300%);
+    }
+    66.67% {
+      transform: translateX(-400%);
+    }
+    75% {
+      transform: translateX(-400%);
+    }
+    83.33% {
+      transform: translateX(-500%);
+    }
+    91.67% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateX(-600%);
+    }
+  }
+  .portfolio-container .mainFooder {
+    margin-top: 4rem;
+    margin-left: 20rem;
+    text-align: left;
+  }
+  .specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main-specs specs-image" "mainFooder mainFooder";
+  }
+  .specs-container .main-specs {
+    grid-area: main-specs;
+    margin: 10%;
+  }
+  .specs-container .main-specs .specs-1,
+  .specs-container .main-specs .specs-2 {
+    font-size: 3em;
+    margin-top: 2em;
+    padding-bottom: 0.5em;
+  }
+  .specs-container .main-specs pre {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  .specs-container .image-mobile-1,
+  .specs-container .image-mobile-2 {
+    display: none;
+  }
+  .specs-container .specs-image {
+    grid-area: specs-image;
+    overflow: hidden;
+    margin: 2em;
+    display: block;
+  }
+  .specs-container .specs-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .trophies-container .trophies-slider .Trophy .item {
+    min-height: 15.875em;
+  }
+}/*# sourceMappingURL=main.css.map */

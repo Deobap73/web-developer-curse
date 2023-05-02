@@ -1,0 +1,542 @@
+@import "colors";
+@import "fonts";
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .body-entrance {
+    .header-entrance {
+      align-content: flex-start;
+      word-spacing: 0.5em;
+      .header-nav {
+        flex-direction: row;
+        a {
+          font-size: 1.1em;
+        }
+      }
+    }
+    .entrance-content {
+      h1 {
+        margin-top: 5em;
+        font-size: 5em;
+        letter-spacing: 0.5em;
+      }
+    }
+    .entrancefooder {
+      margin-top: 5em;
+    }
+  }
+  .main-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    height: 10rem;
+    .signature {
+      align-items: flex-start;
+      margin-left: 6%;
+      height: 15vh;
+      position: relative;
+      h2 {
+        font-size: 3.3em;
+      }
+      p {
+        position: absolute;
+        margin-top: 4em;
+        margin-left: 2em;
+        font-size: 1.1em;
+      }
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 6%;
+      font-size: 1.2em;
+      .dropbtn {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        li {
+          padding: 0.4em 0.2em;
+        }
+      }
+      .sub-menu{
+        width: 8.5em;}
+    }
+  }
+  .home-container {
+    grid-template-rows: 0.1fr 0.6fr 0.1fr;
+    height: 125vh;
+    .maincontent {
+      align-items: flex-start;
+      margin: 0 10%;
+      font-size: 3.5em;
+      h2 {
+        margin-top: 8em;
+      }
+    }
+  }
+  .mainFooder {
+    margin-top: 1em;
+    margin-left: 20em;
+    text-align: left;
+    i {
+      font-size: 1.5em;
+      margin: 1em;
+      color: $color_3;
+    }
+  }
+  // about me page
+  .about-me-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.8fr 1.2fr 0.1fr;
+    grid-template-areas:
+      "header header"
+      "sign-up main-about-me-my-image"
+      "main-about-me main-about-me-my-image"
+      "mainFooder mainFooder";
+    .sign-up {
+      min-height: 35em;
+      max-height: 35em;
+      .sign-up-header {
+        margin: 1em 1.4em;
+      }
+      margin-left: 8%;
+      margin-right: 2%;
+      min-height: 25em;
+      max-height: 30em;
+      form {
+        .sign-up-description {
+          margin: 1.2% 2%;
+        }
+        .sign-up-input {
+          align-items: flex-start;
+          #email {
+            width: 95%;
+            height: 3em;
+          }
+          #submit {
+            margin-left: 2em;
+          }
+        }
+      }
+    }
+    .main-about-me {
+      grid-area: main-about-me;
+      margin-left: 8%;
+      margin-right: 2%;
+      h2 {
+        font-weight: 200;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+    .main-about-me-my-image {
+      grid-area: main-about-me-my-image;
+      overflow: hidden;
+      margin-right: 8%;
+    }
+  }
+  // Portfolio style page
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "portfolio-images portfolio-images"
+      "mainFooder mainFooder";
+    .portfolio-images {
+      grid-area: portfolio-images;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin: 10%;
+      position: relative;
+    }
+    .slideshow__container {
+      width: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      .slideshow__item {
+        padding: 0.5em 0;
+      }
+    }
+    /* Animations for the 12 images */
+    @keyframes slide {
+      0% {
+        transform: translateX(0%);
+      }
+      8.33% {
+        transform: translateX(0%);
+      }
+      16.67% {
+        transform: translateX(-100%);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      33.33% {
+        transform: translateX(-200%);
+      }
+      41.67% {
+        transform: translateX(-200%);
+      }
+      50% {
+        transform: translateX(-300%);
+      }
+      58.33% {
+        transform: translateX(-300%);
+      }
+      66.67% {
+        transform: translateX(-400%);
+      }
+      75% {
+        transform: translateX(-400%);
+      }
+      83.33% {
+        transform: translateX(-500%);
+      }
+      91.67% {
+        transform: translateX(-500%);
+      }
+      100% {
+        transform: translateX(-600%);
+      }
+    }
+  }
+  // specs style page
+  .specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "main-specs specs-image"
+      "mainFooder mainFooder";
+    .main-specs {
+      grid-area: main-specs;
+      margin-left: 10%;
+      .specs-1,
+      .specs-2 {
+        font-size: 3em;
+        margin-top: 2em;
+        padding-bottom: 0.5em;
+      }
+      pre {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+      }
+      .image-mobile-1,
+      .image-mobile-2 {
+        display: none;
+      }
+    }
+    .specs-image {
+      grid-area: specs-image;
+      overflow: hidden;
+      margin: 2em;
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .trophies-container {
+    .trophies-slider {
+      .Trophy {
+        .item {
+          min-height: 21.875em;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .body-entrance {
+    .header-entrance {
+      align-content: flex-start;
+      word-spacing: 0.5em;
+      .header-nav {
+        flex-direction: row;
+        a {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .entrance-content {
+      h1 {
+        margin-top: 5em;
+        font-size: 5em;
+        letter-spacing: 0.5em;
+      }
+    }
+    .entrancefooder {
+      margin-top: 5em;
+    }
+  }
+  .main-header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "signature nav";
+    height: 10rem;
+    .signature {
+      align-items: flex-start;
+      height: 15vh;
+      margin-left: 8%;
+      h2 {
+        font-size: 4em;
+      }
+      p {
+        position: absolute;
+        margin-top: 4em;
+        margin-left: 2.5em;
+        font-size: 1.4em;
+      }
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 8%;
+      font-size: 1.2em;
+      .dropbtn {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .sub-menu {
+        width: 8.5em;
+      }
+    }
+  }
+  .home-container {
+    grid-template-rows: 0.1fr 0.6fr 0.1fr;
+    height: 125vh;
+    .maincontent {
+      align-items: flex-start;
+      margin: 0 10%;
+      font-size: 4em;
+      h2 {
+        margin-top: 8em;
+      }
+    }
+  }
+  .mainFooder {
+    margin-top: 1em;
+    margin-left: 20em;
+    text-align: left;
+    i {
+      font-size: 1.5em;
+      margin: 1em;
+      color: $color_3;
+    }
+  }
+  // about me page
+  .about-me-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.8fr 1fr 0.1fr;
+    grid-template-areas:
+      "header header"
+      "sign-up main-about-me-my-image"
+      "main-about-me main-about-me-my-image"
+      "mainFooder mainFooder";
+    .sign-up {
+      .sign-up-header {
+        margin: 1em 1.4em;
+      }
+      margin-left: 10%;
+      margin-right: 2%;
+      min-height: 31em;
+      max-height: 40em;
+      form {
+        .sign-up-description {
+          margin: 1.4em 3em;
+        }
+        .sign-up-input {
+          align-items: flex-start;
+          #email {
+            height: 3em;
+          }
+          #submit {
+            margin-left: 2em;
+          }
+        }
+      }
+    }
+    .main-about-me {
+      grid-area: main-about-me;
+      margin-left: 10%;
+      margin-right: 2%;
+      h2 {
+        font-weight: 200;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+    .main-about-me-my-image {
+      grid-area: main-about-me-my-image;
+      overflow: hidden;
+      margin-right: 10%;
+    }
+  }
+  // Portfolio style page
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "portfolio-images portfolio-images"
+      "mainFooder mainFooder";
+    .portfolio-images {
+      grid-area: portfolio-images;
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      margin-top: 2%;
+      overflow: hidden;
+      .slideshow__container {
+        position: relative;
+        width: 300%; /* adjusts width to accommodate 12 images */
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        .slideshow__item {
+          position: relative;
+          flex: 1;
+          width: 20%; /* width of each image is 25% of the total width */
+          height: 80vh;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          animation: slide 60s infinite; /* adjusts duration to accommodate 12 images*/
+        }
+      }
+    }
+    /* Animations for the 12 images */
+    @keyframes slide {
+      0% {
+        transform: translateX(0%);
+      }
+      8.33% {
+        transform: translateX(0%);
+      }
+      16.67% {
+        transform: translateX(-100%);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      33.33% {
+        transform: translateX(-200%);
+      }
+      41.67% {
+        transform: translateX(-200%);
+      }
+      50% {
+        transform: translateX(-300%);
+      }
+      58.33% {
+        transform: translateX(-300%);
+      }
+      66.67% {
+        transform: translateX(-400%);
+      }
+      75% {
+        transform: translateX(-400%);
+      }
+      83.33% {
+        transform: translateX(-500%);
+      }
+      91.67% {
+        transform: translateX(-500%);
+      }
+      100% {
+        transform: translateX(-600%);
+      }
+    }
+    .mainFooder {
+      margin-top: 4rem;
+      margin-left: 20rem;
+      text-align: left;
+    }
+  }
+  // specs style page
+  .specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "main-specs specs-image"
+      "mainFooder mainFooder";
+    .main-specs {
+      grid-area: main-specs;
+      margin: 10%;
+      .specs-1,
+      .specs-2 {
+        font-size: 3em;
+        margin-top: 2em;
+        padding-bottom: 0.5em;
+      }
+      pre {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+      }
+    }
+    .image-mobile-1,
+    .image-mobile-2 {
+      display: none;
+    }
+    .specs-image {
+      grid-area: specs-image;
+      overflow: hidden;
+      margin: 2em;
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .trophies-container {
+    .trophies-slider {
+      .Trophy {
+        .item {
+          min-height: 15.875em;
+        }
+      }
+    }
+  }
+}
