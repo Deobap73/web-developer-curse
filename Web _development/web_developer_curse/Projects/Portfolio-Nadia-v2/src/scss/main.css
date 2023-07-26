@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.colorRedTop {
+  max-width: 60%;
+  border: 2px solid red;
+}
+
+.colorWhiteTop {
+  max-width: 65%;
+  border: 2px solid white;
+}
+
+.colorBlackTop {
+  max-width: 70%;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}/*# sourceMappingURL=main.css.map */
