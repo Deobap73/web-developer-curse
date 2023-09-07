@@ -1,0 +1,28 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0rem;
+  position: relative;
+}
+
+.gitHub {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 10rem;
+  height: 4.5rem;
+  top: -.5rem;
+  left: -3.5rem;
+  transform: rotate(310deg);
+  background-color: #000000;
+  padding: 0;
+  
+}
+.fa-github {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 2.5rem;
+}

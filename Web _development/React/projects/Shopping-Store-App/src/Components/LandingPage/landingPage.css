@@ -1,0 +1,45 @@
+.landPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    position: relative;
+}
+
+.landPageWelcome{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 25rem;
+    text-align: center;
+    color: rgb(78, 78, 213);
+}
+.one{
+    position: absolute;
+    top: 10rem;
+    left: 55rem;
+    color: rgb(78, 78, 213);
+}
+.two{
+    position: absolute;
+    top: 17.5rem;
+    left: 30rem;
+    color: rgb(78, 78, 213);
+}
+.Three{
+    position: absolute;
+    top: 35rem;
+    left: 45rem;
+    color: rgb(78, 78, 213);
+}
+
+.landPageImage {
+    width: 8rem;
+} 
+
+.landPageVisitUs{
+    position: absolute;
+    bottom: 0rem;
+    left: 40rem;
+    color: rgb(78, 78, 213);
+}

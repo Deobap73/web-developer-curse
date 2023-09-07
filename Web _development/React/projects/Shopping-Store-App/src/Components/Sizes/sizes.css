@@ -1,0 +1,55 @@
+section {
+  text-align: center;
+}
+.sizeContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+  position: relative;
+}
+.mainSizesTitle{
+    margin-left: 5rem;
+}
+
+.mainSizes {
+  margin-left: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+  height: 1rem;
+  gap: .5rem;
+}
+
+.mainSizes button.selectedStyle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ECECEC;
+  background-color: black;
+  width: 2.8rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: .2rem;
+}
+
+
+.mainSizes button.defaultStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: #ECECEC;
+  width: 2.8rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: .2rem;
+}
+
+.gitHub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(22.5deg);
+  background-color: #000000;
+  padding: 10px;
+}

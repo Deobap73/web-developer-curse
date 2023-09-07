@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 240px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.card h2 {
+  width: 240px;
+  height: 4rem;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.card h2::after {
+content: "";
+width: 20%;
+height: 0.2rem;
+background-color: #fdd835;
+position: absolute;
+bottom: 0; 
+  left: 0; 
+  right: 0; 
+  margin: 0 auto;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.largeFont {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.priceValue {
+  font-size: 1.2rem;
+  margin-left: 4px;
+}
+
+.paymentInstallments {
+  font-size: 1rem;
+  margin: 0;
+  color: gray;
+}
+
+button {
+  background-color: rgb(27, 26, 32);
+  color: rgb(255, 255, 255);
+  padding: 15px 0px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: 0px;
+  transition: background-color 0.2s ease 0s;
+}
+
+.card:hover button {
+  background-color: #fdd835; 
+}
+
+
+.image-card {
+  position: relative; /* Torna a posição relativa para posicionamento absoluto da overlay */
+  display: inline-block;
+}
+.top-right-overlay {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  height: auto;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo da overlay */
+  color: white; /* Cor do texto na overlay */
+  padding: 8px; /* Espaçamento interno da overlay */
+}
